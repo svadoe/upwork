@@ -1,0 +1,8 @@
+Open two terminal windows and do as follows:
+In one execute the file cloc_in_out
+In the other execute the file logger
+It started to log and created two files in the Documents folder
+
+Open each one of them and you will see the logs
+It is logging every five minutes, you can test by typing or mouse clicks.
+No activity in five seconds it should be cero for each line

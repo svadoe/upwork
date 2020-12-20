@@ -1,0 +1,24 @@
+
+
+  Case 1: user works from 8:00hrs to 14:00hrs  
+  
+  time (24 hours clock) | use case                   | activity        | system notification
+  ----------------------|----------------------------|-----------------|---------------------
+  8:00                  | user comes to work         | clock in event  | log in notification               
+  10:00                 | user takes a break         | clock out event | log out notification
+  10:15                 | user comes back from break | clock in event  | log in notification
+  14:00                 | user goes home             | clock out event | log out notification
+  
+  
+
+  
+  Case 2: user works from 20:00hrs to 02:00hrs  
+
+  time (24 hours clock)  | use case                     | activity          | system notification
+  ---------------------- | ---------------------------- | ----------------- | ---------------------
+  20:00                  | user comes to work           | clock in event    | log in notification
+  22:00                  | user takes a break           | clock out event   | log out notification
+  22:15                  | user comes back from break   | clock in event    | log in notification
+  23:59:59               | application generated log    | clock in out      | no system notification
+  00:00:00               | application generated log    | clock in event    | no system notification
+  02:00                  | user goes home               | clock out event   | log out notification

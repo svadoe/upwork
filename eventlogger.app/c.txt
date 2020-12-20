@@ -1,0 +1,7 @@
+install_name_tool -id @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore eventlogger.app/Contents/Frameworks/QtCore.framework/Versions/5/QtCore                -- INSERT --
+install_name_tool -id @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore eventlogger.app/Contents/Frameworks/QtCore.framework/Versions/5/QtCore                -- INSERT --
+install_name_tool -id @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore eventlogger.app/Contents/Frameworks/QtCore.framework/Versions/5/QtCore                -- INSERT --
+install_name_tool -id @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore eventlogger.app/Contents/Frameworks/QtCore.framework/Versions/5/QtCore                -- INSERT --
+install_name_tool -change @rpath/QtCore.framework/Versions/5/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/5/QtCore eventlogger.app/Contents/MacOs/eventlogger
+
+install_name_tool -change @rpath/QtGui.framework/Versions/5/QtGui @executable_path/../Frameworks/QtGui.framework/Versions/5/QtGui eventlogger.app/Contents/Frameworks/QtWidgets.framework/Versions/5/QtWidget
